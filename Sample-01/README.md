@@ -1,3 +1,15 @@
+# Testing cy.origin against auth0
+
+This repo is a clone of https://github.com/auth0-samples/auth0-react-samples sample-01 with cypress tests added in on top if it. For the tests to run you will have to follow the guide below, fill out the `src/auth_config.json` config and add a username and password in the `cypress.json` file.
+
+Once auth is setup correctly, you can start the server with:
+
+`npm run dev`
+
+and in another terminal run the tests with:
+
+`npm run cypress:open`
+
 # Auth0 React SDK Sample Application
 
 This sample demonstrates the integration of [Auth0 React SDK](https://github.com/auth0/auth0-react) into a React application created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html). The sample is a companion to the [Auth0 React SDK Quickstart](https://auth0.com/docs/quickstart/spa/react).

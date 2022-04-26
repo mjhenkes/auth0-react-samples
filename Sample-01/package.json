@@ -13,7 +13,8 @@
     "api-server": "node api-server.js",
     "api-server:dev": "nodemon api-server.js",
     "dev": "npm-run-all --parallel spa api-server:dev",
-    "prod": "npm-run-all --parallel server api-server"
+    "prod": "npm-run-all --parallel server api-server",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
@@ -43,12 +44,17 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.0",
     "@testing-library/react": "^12.0",
+    "cypress": "^9.6.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "jest-environment-jsdom": "^27.0",
     "jest-fetch-mock": "^3.0",
     "nodemon": "^2.0"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:cypress/recommended"
+    ]
   },
   "browserslist": {
     "production": [
